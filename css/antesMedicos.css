@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #F7F9FA;
+}
+
+.recuadro {
+  width: auto;
+  height: auto;
+  background-color: #FFFF;
+  box-shadow: 0 0 20px 10px rgba(0, 106, 38, .5);
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+  .form-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+.title {
+  text-align: center;
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: -15px;
+  cursor: pointer;
+  position: relative;
+}
+.icon h2{
+  text-align: center;
+  font-family: 'Belleza', sans-serif;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.icon img{
+  margin-left: 10PX;
+  margin-top: -8px;
+  width: 20px;
+  height: auto;
+} 
+.alert {
+  display: none;
+  position: absolute;
+  transform: translate(200px, -80px); /* Ajusta la posición exacta */
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+.alert p{
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Belleza', sans-serif;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+}
+.label{
+    font-family: 'Belleza', sans-serif;
+    font-size: 18px;
+  }
+  
+.input {
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  max-width: 190px;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.input:focus {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  outline-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px 10px rgba(0, 106, 38, .5);
+  transition: .5s;
+  transition-property: box-shadow;
+}
+/*------RADIO BUTTON-----*/
+.subtitle{
+  font-size: 18px;
+  font-family: 'Belleza', sans-serif;
+}
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 10px
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  position: relative;
+  margin-right: 10px;
+}
+
+.radio-circle::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked + .radio-circle::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-button:nth-of-type(1) input[type="radio"]:checked + .radio-circle::before {
+  background-color: #096B30;
+}
+
+.radio-button:nth-of-type(2) input[type="radio"]:checked + .radio-circle::before {
+  background-color: #096B30;
+}
+.radio-label {
+    font-size: 16px;
+    font-family: 'Belleza', sans-serif;
+    color: black;
+}
+
+.radio-button:hover .radio-circle {
+  border-color: #555;
+}
+
+.radio-button:hover input[type="radio"]:checked + .radio-circle::before {
+  background-color: #555;
+}
+
+.buttons {
+  /* Convierte el contenedor de botones en un contenedor flexible */
+  display: flex;
+  justify-content: center;
+}
+.imc{
+    margin: 10px;
+  }
+.buttons button {
+  padding: 8px 40px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #096B30;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(211, 68%, 74%);
+  cursor: progress;
+  transition: background-color 0.5s;
+}
+
+

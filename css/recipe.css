@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+
+
+body{
+    background-color: #F7F9FA;
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: white; /* Fondo blanco */
+  height: 65px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  }
+  /*primero*/
+  .home a{
+    font-size: 33px;
+    background-color: #ffffff;
+    font-family: 'Arapey', serif;
+    margin-left: 20px;
+  
+  }
+  /*enmedio*/
+  .logo {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+    /*ultimo*/
+  
+  .perfil img{
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+  }
+
+/*----RECIPES----*/
+.REC{
+  text-align: center;  
+  background-color: #096B30; 
+  border-radius: 0 30px 30px 0;
+  width: 15%;
+  margin-top: 40px;
+}
+.REC h2{
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title{
+    height: 20%;
+    width: auto;
+    margin-left: 50%;
+    margin-right: 20%;
+    text-align: center;
+    margin-top: 1%;
+}
+.title h1{
+  font-family: 'Arapey', serif;
+      font-size: 33px;
+    color: #096B30;
+}
+.containers{
+    display: flex;
+      /*top,right,bottom,left*/
+    margin: 40px 300px 40px 300px;
+
+}
+.box h1{
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+  color: #096B30;
+}
+.box ul{
+  font-family: 'Belleza', sans-serif;
+  font-size: 18px;
+}
+.containers img{
+    height: 350px;
+    width: auto;
+    margin-right: 100px;
+}
+
+.inst {
+    margin: 40px 200px 40px 200px;
+    text-align: justify;
+}
+
+.inst h1{
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+color: #096B30;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.inst ol{
+  font-family: 'Belleza', sans-serif;
+  font-size: 18px;
+}
+.inst .lista{
+    margin-left: 80px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}

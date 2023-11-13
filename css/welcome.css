@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+
+
+body{
+    background-color: #F7F9FA;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .container_a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .container_a h1 {
+    font-family: 'Arapey', serif;
+    font-size: 65px;
+    color: #096B30;
+  }
+  .container_a img {
+    margin-left: 10px;
+    height: 65px;
+    width: auto;
+  }  
+h2{
+    font-family: 'Belleza', sans-serif;
+    font-size: 18px;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #F7F9FA;
+}
+
+.recuadro {
+  width: 650px;
+  height: 450px;
+  background-color: #FFFF;
+  box-shadow: 0 0 20px 10px rgba(0, 106, 38, .5);
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.form-container,
+.contenedor {
+  flex: 1;
+  width: 50%;
+  }
+  .form-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+.title {
+  text-align: center;
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.input {
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  max-width: 190px;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.input:focus {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  outline-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px 10px rgba(0, 106, 38, .5);
+  transition: .5s;
+  transition-property: box-shadow;
+}
+
+
+.buttons {
+  /* Convierte el contenedor de botones en un contenedor flexible */
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 8px 40px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #096B30;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(211, 68%, 74%);
+  cursor: progress;
+  transition: background-color 0.5s;
+}
+
+
+.contenedor {
+  background-image: url('fondoCuenta.jpeg'); /* Ruta de la imagen de fondo */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-repeat: no-repeat; /* Evita repetir la imagen */
+  background-position: center center; /* Centra la imagen */
+  position: relative; /* Para posicionar correctamente el texto */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor::before {
+  content: ""; /* Pseudo-elemento para agregar un efecto de superposición */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+}
+
+.contenedor h1, .contenedor p {
+  position: relative; /* Asegura que el texto se muestre por encima de la superposición */
+  z-index: 2; /* Asegura que el texto esté en la parte superior */
+  color: white; /* Color del texto (puede ser modificado) */
+}
+.contenedor h1{
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+  text-align: center;
+}
+.contenedor p{
+  font-family: 'Belleza', sans-serif;
+  font-size: 17px;
+  text-align: justify; 
+  margin: 0 50px 30px 50px;
+}

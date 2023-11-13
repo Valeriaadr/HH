@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\weeklyRegister.css">
+    <title>WeeklyRegister</title>
+</head>
+<body>
+    <header class="header">  
+        <div class="home">
+            <a>Home</a>
+        </div>
+        <div class="logo">
+            <a href="homeCl.html"><img src="img\logoH.png">  </a>
+        </div>
+    </header>
+
+    <section class="WR">
+        <h1>WEEKLY REGISTER</h1>
+        <div class="linea"></div>
+        <input id="height" class="input" type="number" placeholder="Altura">
+        <input id="weight" class="input" type="number" placeholder="Peso">
+        <div class="imc" id="resultado"></div>
+
+        <input class="input" placeholder="Comments">
+        <div class="buttons">
+            <a href="profile_user.html">
+                <button>Upload</button>
+            </a>
+        </div>
+    </section>
+    <script>
+        function calcularIMC() {
+            var altura = parseFloat(document.getElementById('altura').value);
+            var peso = parseFloat(document.getElementById('peso').value);
+
+            if (!isNaN(altura) && !isNaN(peso)) {
+                var imc = peso / Math.pow(altura, 2);
+                document.getElementById('resultado').innerHTML = 'Tu IMC es: ' + imc.toFixed(2);
+            } else {
+                document.getElementById('resultado').innerHTML = 'Por favor, ingresa valores numéricos válidos.';
+            }
+        }
+
+        document.getElementById('altura').addEventListener('input', calcularIMC);
+        document.getElementById('peso').addEventListener('input', calcularIMC);
+    </script>
+</body>
+</html>

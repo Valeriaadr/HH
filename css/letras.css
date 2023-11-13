@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&display=swap'); /*titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');*/
+
+/*Titulos 25px, 160%*/
+/*Texto 18px, 150%*/
+body{
+    font-size: 13px;
+    text-align: center;
+}
+h1{
+    margin: 30px;
+}
+.a{
+    font-family: 'Quicksand', sans-serif;
+}
+.b{
+    font-family: 'Glegoo', serif;
+}
+.c{
+    font-family: 'Forum', cursive;
+}
+.d{
+    font-family: 'Signika', sans-serif;
+}
+.e{
+    font-family: "Signatra";
+}
+.f{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.g{
+    
+}
+.h{
+    
+}
+.i{
+    
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #F7F9FA;
+}
+
+.recuadro {
+  width: auto;
+  height: auto;
+  background-color: #FFFF;
+  box-shadow: 0 0 20px 10px rgba(0, 106, 38, .5);
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+  .form-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+.title {
+  text-align: center;
+  font-family: 'Arapey', serif;
+  font-size: 33px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: -15px;
+  cursor: pointer;
+  position: relative;
+}
+.icon h2{
+  text-align: center;
+  font-family: 'Belleza', sans-serif;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.icon img{
+  margin-left: 10PX;
+  margin-top: -8px;
+  width: 20px;
+  height: auto;
+} 
+.alert {
+  display: none;
+  position: absolute;
+  transform: translate(200px, -80px); /* Ajusta la posición exacta */
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+.alert p{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Belleza', sans-serif;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+}
+.sub{
+  font-family: 'Belleza', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.input {
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  max-width: 190px;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.input:focus {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  outline-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px 10px rgba(0, 106, 38, .5);
+  transition: .5s;
+  transition-property: box-shadow;
+}
+
+
+.input-ckeck .input {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #ffffff;
+  justify-content: center;
+  border-radius: 5px
+}
+
+.input-ckeck .value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-ckeck .value:not(:active):hover,
+.input-ckeck .value:focus {
+  background-color: #10d157;
+}
+
+.input-ckeck .value:focus,
+.input-ckeck .value:active {
+  background-color: #10d157;
+  outline: none;
+}
+
+.input-ckeck .value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2F81F7;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.input-ckeck .value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.input-ckeck .input:hover > :not(.value:hover) {
+  transition: 300ms;
+  filter: blur(1px);
+  transform: scale(0.95,0.95);
+}
+
+
+
+
+
+.input-ckeck .input-ckeck .input {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #0D1117;
+  justify-content: center;
+  border-radius: 5px
+}
+
+
+
+
+
+
+
+
+.buttons {
+  /* Convierte el contenedor de botones en un contenedor flexible */
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 8px 40px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #096B30;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(211, 68%, 74%);
+  cursor: progress;
+  transition: background-color 0.5s;
+}

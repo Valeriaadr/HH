@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  /* Convierte el encabezado en un contenedor flexible con elementos centrados */
+  display: flex;
+  justify-content: space-between;
+  /* Distribuye el espacio entre los elementos */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  background-color: white;
+  /* Fondo blanco */
+  height: 65px;
+  /*top,right,bottom,left*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  /* Convierte el contenedor del logotipo en un contenedor flexible */
+  display: flex;
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  margin-left: 100px;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+  /* Agrega espacio a la derecha de la imagen */
+}
+
+.buttons {
+  /* Convierte el contenedor de botones en un contenedor flexible */
+  display: flex;
+}
+
+.buttons button {
+  margin-right: 100px;
+  display: inline-block;
+  /* Hace que los botones sean elementos en línea */
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #096B30;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(211, 68%, 74%);
+  /* Cambia el color de fondo al pasar el cursor */
+  cursor: progress;
+  /* Cambia el cursor al pasar por encima del botón */
+  transition: background-color 0.5s;
+  /* Transición suave del color de fondo al pasar el cursor */
+}
+
+
+
+
+
+
+
+/*segunda parte*/
+.container {
+  background-color: #F7F9FA;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+  margin-bottom: 60px;
+}
+
+.eslogan {
+  /*--------------------------*/
+  flex-direction: column;
+  width: 30%;
+  margin-left: 150px;
+}
+
+.container .eslogan h2 {
+  font-size: 60px;
+  font-family: 'Arapey', serif;
+}
+
+.container .eslogan h1 {
+  margin: 10px;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Arapey', serif;
+}
+
+.container .eslogan p {
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Belleza', sans-serif;
+}
+
+.container .eslogan .a {
+  text-align: end;
+  margin-top: 60px;
+}
+
+.container .eslogan .a h2 {
+  font-size: 18px;
+  font-family: 'Arapey', serif;
+}
+
+.container .eslogan .a .buttons button {
+  margin-left: 200px;
+  margin-top: 15px;
+}
+
+.container .div1 {
+  /*--------------------------*/
+  margin-left: 70px;
+  align-self: flex-end;
+}
+
+.container .div1 img {
+  width: auto;
+  height: 550px;
+}
+
+
+
+/* tercera parte*/
+.about {
+  height: 50px;
+  /* Ajusta la altura según tus necesidades */
+  background-color: #096B30;
+  /* Color verde */
+  border-radius: 30px 0 0 30px;
+  /* Bordes redondeados solo en la orilla izquierda */
+  width: 30%;
+  margin-left: 70%;
+}
+
+.about h2 {
+  padding: 5px;
+  font-family: 'Arapey', serif;
+  text-align: center;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.contenedor {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+}
+
+.contenedor img {
+  height: 350px;
+  width: auto;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F7F9FA;
+  padding: 40px;
+}
+
+.contenedor .texto p {
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Belleza', sans-serif;
+}
+
+
+/*Cuarta Parte*/
+.cuatro {
+  display: flex;
+  align-items: center;
+}
+
+.cuatro .text {
+  float: left;
+  height: auto;
+  width: 50%;
+  /*top,right,bottom,left*/
+  padding: 40px;
+  margin-top: 60px;
+  background-color: #F7F9FA;
+  border-radius: 15px;
+}
+
+.cuatro p {
+  font-family: 'Belleza', sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  padding: 10px;
+}
+
+hr {
+  border: 3px solid #096B30;
+  /* Define el estilo del borde de la línea */
+  margin: 0;
+  /* Ajusta el espacio alrededor de la línea según tus necesidades */
+  width: 45%;
+}
+
+.cuatro img {
+  width: 90px;
+  margin-top: 170px;
+  margin-left: -50px;
+}
+
+.cuatro h2 {
+  font-family: 'Arapey', serif;
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+  width: 20%;
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+/*CINCO*/
+.cinco {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.cinco h2 {
+  font-family: 'Arapey', serif;
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+  width: 20%;
+  margin-left: 400px;
+  margin-top: 40px;
+}
+
+.cinco .text {
+  float: right;
+  height: auto;
+  width: 70%;
+  /*top,right,bottom,left*/
+  padding: 40px;
+  background-color: #F7F9FA;
+  border-radius: 15px;
+}
+
+.cinco p {
+  font-family: 'Belleza', sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/*hr {
+    border: 3px solid #096B30; 
+    margin: 0; 
+  }*/
+.cinco img {
+  width: 90px;
+  margin-top: 130px;
+  margin-left: 200px;
+}
+
+
+
+
+
+
+.use .use_A{
+  height: 50px; /* Ajusta la altura según tus necesidades */
+  background-color: #096B30; /* Color verde */
+  border-top-right-radius: 25px; /* Radio de borde redondeado */
+  border-bottom-right-radius: 25px; /* Radio de borde redondeado */
+  width: 30%;
+  left: 0;
+  margin-top: 60px;
+}
+.use h1{
+  padding: 5px;
+  font-family: 'Arapey', serif;
+  text-align: center;
+  font-size: 33px;
+  color: #ffffff;
+}
+.checklist{
+        /*top,right,bottom,left*/
+  margin: 30px auto 60px 15px;
+  background-color: #F7F9FA;
+  border-radius: 15px;
+  width: 65%;
+  padding: 35px;
+  font-family: 'Belleza', sans-serif;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/*Redes sociales*/
+.contenedor_u {
+  position: relative;
+  margin-top: 60px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor_u img {
+  width: auto;
+  height: 20%;
+}
+
+.recuadro-verde {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 50px;
+  width: 100%;
+  height: 25%;
+  background-color: #096B3080;
+}
+
+.recuadro-verde .tema {
+  flex-direction: column;
+}
+
+.recuadro-verde h2 {
+  font-family: 'Arapey', serif;
+  color: #fff;
+  /* Establece el color de texto en blanco */
+  text-align: center;
+  font-size: 35px;
+}
+
+.recuadro-verde p {
+  font-size: 20;
+  font-family: 'Belleza', sans-serif;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  width: 180px;
+  box-shadow: 0, 10px, 25px rgba(0, 0, 0, 0);
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--1), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ul li:hover::before {
+  opacity: 1;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+ul li:hover::after {
+  opacity: 0.5;
+}
+
+ul li i {
+  color: 777;
+  font-size: 1.75em;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+ul li:hover i {
+  transform: scale(0);
+  font-size: 10pxpx;
+  transition-delay: 0.25s;
+}
+
+ul li span {
+  position: absolute;
+}
+
+ul li .titulo {
+  color: #fff;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+  font-family: 'Playfair Display', serif;
+}
+
+ul li:hover .titulo {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}

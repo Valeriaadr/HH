@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+
+*{
+  margin: 0%;
+}
+body {
+  background-color: #ffffff; /* Cambia el color de fondo del cuerpo a gris claro */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: white; /* Fondo blanco */
+  height: 65px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  .home a{
+    font-size: 20px;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    margin-left: 10px;
+    margin-left: 30px;
+  
+  }
+  .logo {
+    /* Convierte el contenedor del logotipo en un contenedor flexible */
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #ffffff;
+    margin-right: 30px;
+
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px; /* Agrega espacio a la derecha de la imagen */
+  }  
+  .dates {
+    height: 25%;
+    background-color: #F7F9FA;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+      /*top,right,bottom,left*/
+    padding: 30px 80px 30px 80px;
+    margin-bottom: 40px;
+  }
+  .dates h1{
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Arapey', serif;
+  }
+  .dates img{
+    width: 200px;
+    border-radius: 50%;
+  }
+  .dates .a{
+    margin-left: 80px;
+  }
+  .dates .b{
+    margin-left: 300px;
+  }
+
+  .dates  .c {
+    text-align: center;
+    background-color: #FFF;
+    margin-left: 300px;
+    height: 100px;
+    width: 20%;
+    border-radius: 15px;
+    
+  }
+  button {
+    display: flex;
+    height: 3em;
+    width: auto;
+    align-items: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    margin-left: 90%;
+   }
+   
+   button > svg {
+    font-family: 'DM Sans', sans-serif;
+    margin-right: 5px;
+    font-size: 25px;
+    transition: all 0.5s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+  
+.contenedor {
+  /*top,right,bottom,left*/
+  padding: 20px 80px 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedor a {
+  margin-right: 50px;
+}
+
+.contenedor .a h1 {
+  text-align: center;
+  font-size: 33px;
+  font-family: 'Arapey', serif;
+  margin-bottom: 10px;
+  color: #386C5F;
+}
+
+.contenedor table {
+  font-size: 18px;
+  font-family: 'Arapey', serif;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor .b {
+  text-align: center;
+}
+.contenedor .c {
+  text-align: center;
+}
+
+.contenedor img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.buttons {
+  /* Convierte el contenedor de botones en un contenedor flexible */
+  display: flex;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 25px;
+  width: auto;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #096B30;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+
+}
+
+button:hover {
+  background-color: hsl(211, 68%, 74%);
+  cursor: progress;
+  transition: background-color 0.5s;
+}
+
+
+  
+

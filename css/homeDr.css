@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #F7F9FA;
+  overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: white; /* Fondo blanco */
+    height: 65px;
+    padding: 10px;
+  }  
+  
+  /*enmedio*/
+  .logo {
+    /* Convierte el contenedor del logotipo en un contenedor flexible */
+    display: flex;
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    margin-left: 70px;
+  }
+  
+  .logo img {
+    height: 50px;/*--------------------------------------------------------------------------------*/
+    margin-right: 10px;
+    /* Agrega espacio a la derecha de la imagen */
+  }
+  .perfil .message{
+    height: 50px;
+    margin-right: 100px;
+  }
+  .perfil img{
+    height: 60px;
+    width: auto;
+    margin-right: 18px;
+    margin-left: 10px;
+  }
+
+
+  .contenedor {
+      position: relative;
+      width: 100%;
+      height: 1000%;
+  }
+
+  .imagen-fondo {
+      width: 100%;
+      height: 25%;
+      opacity: 0.5;
+  }
+
+  .texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #096B30;
+      font-family: 'Arapey', serif;
+      font-size: 25px;
+  }
+
+
+  .dos{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+  }
+  .dos h1{
+    font-size: 28px;
+    font-family: 'Belleza', sans-serif;
+
+  }
+  .buttons {
+    /* Convierte el contenedor de botones en un contenedor flexible */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+  }
+  
+  .buttons button {
+    display: inline-block;
+    /* Hace que los botones sean elementos en línea */
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #096B30;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: hsl(211, 68%, 74%);
+    /* Cambia el color de fondo al pasar el cursor */
+    cursor: progress;
+    /* Cambia el cursor al pasar por encima del botón */
+    transition: background-color 0.5s;
+    /* Transición suave del color de fondo al pasar el cursor */
+  }
+
+  .cita{
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-color: #096B30; /* Color verde */
+    border-top-right-radius: 25px; /* Radio de borde redondeado */
+    border-bottom-right-radius: 25px; /* Radio de borde redondeado */
+    width: 50%;
+    left: 0;
+    margin-top: 60px;
+  }
+  .cita h1{
+    padding: 5px;
+    font-family: 'Arapey', serif;
+    text-align: center;
+    font-size: 33px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .pacients{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .pacients .pacients_a{
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-color: #096B30; /* Color verde */
+    border-radius: 30px; /* Bordes redondeados solo en la orilla izquierda */
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 60px;
+   }
+  
+  .pacients .pacients_a h1{
+    padding: 5px;
+    font-family: 'Arapey', serif;
+    text-align: center;
+    font-size: 33px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .pacients h2{
+    font-size: 18px;
+    font-family: 'Belleza', sans-serif;
+    text-align: center;
+    margin: 30px;
+  }
+  .lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lista div{
+    width: 30%;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: 'Belleza', sans-serif;
+  }
+
+  /*-----CONTACT US------*/
+  .contenedor_u {
+    margin-top: 60px;
+    background-size: cover;
+    padding: 50px;
+    height: 100%;
+    background-color: #096B30;
+    flex-direction: column;
+  }
+  .contenedor_u h2 {
+    font-family: 'Arapey', serif;
+    color: #fff;
+    text-align: center;
+    font-size: 33px;
+  }
+  
+  .contenedor_u p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Belleza', sans-serif;
+    color: white;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px #0000004d;
+    background-color: #ffffff;
+    transition: 0.5s;
+  }
+  
+  ul li:hover {
+    width: 180px;
+    box-shadow: 0, 10px, 25px rgba(0, 0, 0, 0);
+  }
+  
+  ul li::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--1), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  ul li:hover::before {
+    opacity: 1;
+  }
+  
+  ul li::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+  }
+  
+  ul li:hover::after {
+    opacity: 0.5;
+  }
+  
+  ul li i {
+    color: 777;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  
+  ul li:hover i {
+    transform: scale(0);
+    font-size: 10pxpx;
+    transition-delay: 0.25s;
+  }
+  
+  ul li span {
+    position: absolute;
+  }
+  
+  ul li .titulo {
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  ul li:hover .titulo {
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+  
+    
+
+  

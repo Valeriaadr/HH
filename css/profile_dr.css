@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+/*titulos 33 font-family: 'Arapey', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*texto 18 font-family: 'Belleza', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+/*BOTONES 16 font-family: 'DM Sans', sans-serif;*/
+
+*{
+  margin: 0%;
+}
+body {
+  background-color: #ffffff; /* Cambia el color de fondo del cuerpo a gris claro */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: white; /* Fondo blanco */
+  height: 65px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  .home a{
+    font-size: 20px;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    margin-left: 10px;
+    margin-left: 30px;
+  
+  }
+  .logo {
+    /* Convierte el contenedor del logotipo en un contenedor flexible */
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #ffffff;
+    margin-right: 30px;
+
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px; /* Agrega espacio a la derecha de la imagen */
+  }  
+  .dates {
+    height: 25%;
+    background-color: #F7F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      /*top,right,bottom,left*/
+    padding: 80px 90px 80px 90px;
+    margin-bottom: 40px;
+  }
+  .dates h1{
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Arapey', serif;
+  }
+  .dates img{
+    width: 200px;
+    border-radius: 50%;
+  }
+  .dates .a{
+    margin-left: 80px;
+  }
+  .dates  .c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 100px;
+  }
+  .dates .c h1{
+    font-size: 18px;
+    font-family: 'Belleza', sans-serif;
+    text-align: center;
+  }
+  .dates .c p{
+    background-color: white;
+    height: 100px;
+    width: 75%;
+    border-radius: 15px;
+  }
+
+.contenedor {
+  /*top,right,bottom,left*/
+  padding: 20px 80px 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedor a {
+  margin-right: 50px;
+}
+
+.contenedor .a h1 {
+  text-align: center;
+  font-size: 33px;
+  font-family: 'Arapey', serif;
+  margin-bottom: 10px;
+  color: #386C5F;
+}
+  
+  .buttons button {
+    margin-right: 100px;
+    /* Hace que los botones sean elementos en línea */
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    /* Centra el texto horizontalmente */
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #096B30;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: hsl(211, 68%, 74%);
+    /* Cambia el color de fondo al pasar el cursor */
+    cursor: progress;
+    /* Cambia el cursor al pasar por encima del botón */
+    transition: background-color 0.5s;
+    /* Transición suave del color de fondo al pasar el cursor */
+  }
+
+    /*-----CONTACT US------*/
+    .contenedor_u {
+        margin-top: 60px;
+        background-size: cover;
+        padding: 50px;
+        height: 100%;
+        background-color: #096B30;
+        flex-direction: column;
+      }
+      .contenedor_u h2 {
+        font-family: 'Arapey', serif;
+        color: #fff;
+        text-align: center;
+        font-size: 33px;
+      }
+      
+      .contenedor_u p {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Belleza', sans-serif;
+        color: white;
+      }
+      
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 25px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      ul li {
+        position: relative;
+        list-style: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 25px #0000004d;
+        background-color: #ffffff;
+        transition: 0.5s;
+      }
+      
+      ul li:hover {
+        width: 180px;
+        box-shadow: 0, 10px, 25px rgba(0, 0, 0, 0);
+      }
+      
+      ul li::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 50px;
+        background: linear-gradient(45deg, var(--1), var(--j));
+        opacity: 0;
+        transition: 0.5s;
+      }
+      
+      ul li:hover::before {
+        opacity: 1;
+      }
+      
+      ul li::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 60px;
+        background: linear-gradient(45deg, var(--i), var(--j));
+        opacity: 0;
+        transition: 0.5s;
+        z-index: -1;
+        filter: blur(15px);
+      }
+      
+      ul li:hover::after {
+        opacity: 0.5;
+      }
+      
+      ul li i {
+        color: 777;
+        font-size: 1.75em;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+      }
+      
+      ul li:hover i {
+        transform: scale(0);
+        font-size: 10pxpx;
+        transition-delay: 0.25s;
+      }
+      
+      ul li span {
+        position: absolute;
+      }
+      
+      ul li .titulo {
+        color: #fff;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transform: scale(0);
+        transition: 0.5s;
+        transition-delay: 0s;
+        font-family: 'DM Sans', sans-serif;
+      }
+      
+      ul li:hover .titulo {
+        transform: scale(1);
+        transition-delay: 0.25s;
+      }
+      
+        
+    
+      
+  

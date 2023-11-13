@@ -1,0 +1,74 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antecedentes Médicos</title>
+    <link rel="stylesheet" href="css/antesMedicos.css"/>
+  </head>
+  <body> <!-- Condicion medica actual, Estatura, Peso, imc-->
+    <section class="recuadro">
+      <div class="form-container">
+  
+          <form action="procesar_formulario.php" method="post" class="form">
+              <h1 class="title">Current medical condition</h1>
+            
+            <div class="icon" id="icon">
+                <h2> Medical condition </h2>
+                <img src="img/advertencia.png">
+            </div>
+            <div class="alert" id="alert">
+                    <span class="close" onclick="closeAlert()">x</span>
+                    <p>Diabetes, hypertension, high cholesterol, allergies, etc.</p>
+            </div>
+
+            <script>
+            function openAlert() {
+                const alert = document.getElementById('alert');
+                alert.style.display = 'block';
+            }
+            
+            function closeAlert() {
+                const alert = document.getElementById('alert');
+                alert.style.display = 'none';
+            }
+            
+            document.getElementById('icon').addEventListener('click', openAlert);
+        </script> 
+
+
+              <input type="text" id="email" name="email"  class="input" required>
+              <input id="altura" class="input" type="number" placeholder="Altura">
+              <input id="peso" class="input" type="number" placeholder="Peso">
+              <div class="imc" id="resultado"></div>
+              <script>
+                function calcularIMC() {
+                    var altura = parseFloat(document.getElementById('altura').value);
+                    var peso = parseFloat(document.getElementById('peso').value);
+        
+                    if (!isNaN(altura) && !isNaN(peso)) {
+                        var imc = peso / Math.pow(altura, 2);
+                        document.getElementById('resultado').innerHTML = 'Tu IMC es: ' + imc.toFixed(2);
+                    } else {
+                        document.getElementById('resultado').innerHTML = 'Por favor, ingresa valores numéricos válidos.';
+                    }
+                }
+        
+                document.getElementById('altura').addEventListener('input', calcularIMC);
+                document.getElementById('peso').addEventListener('input', calcularIMC);
+            </script>            
+  
+              <div class="buttons">
+                  <a href="histotriaAlim.html">
+                      <button type="submit" value="Registrarse">Next</button>
+                  </a>
+              </div>
+          </form>
+  
+      </div>
+  </section>
+  </body>
+  </html>
+  
+  

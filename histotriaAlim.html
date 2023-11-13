@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet history</title>
+  <link rel="stylesheet" href="css\historialAlim.css"/>
+</head>
+<body>
+  <section class="recuadro">
+    <div class="form-container">
+        <form action="procesar_formulario.php" method="post" class="form">
+          <h1 class="title">Diet history</h1>
+          <h1 class="sub">Intolerance or allergy</h1>
+            <input type="text" id="email" name="email" class="input" >
+          <div class="icon" id="icon">
+            <h2> Dietary restriction </h2>
+            <img src="img/advertencia.png">
+        </div>
+        <div class="alert" id="alert">
+                <span class="close" onclick="closeAlert()">x</span>
+                <p>Vegetarianism, veganism, etc.</p>
+        </div>
+        <script>
+          function openAlert() {
+              const alert = document.getElementById('alert');
+              alert.style.display = 'block';
+          }
+          
+          function closeAlert() {
+              const alert = document.getElementById('alert');
+              alert.style.display = 'none';
+          }
+          
+          document.getElementById('icon').addEventListener('click', openAlert);
+      </script> 
+
+
+
+            <input type="text" id="password" name="password" class="input" >
+            <h1 class="sub">Main Goal</h1>
+            <div class="input-ckeck">
+              <button class="value">
+                Lose weight
+              </button>
+              <button class="value">
+                Gain weight
+              </button>
+              <button class="value">
+                Maintain weight
+              </button>
+              <button class="value">
+                Gain muscle mass
+              </button>
+              <button class="value">
+                Maintain muscle mass
+              </button>
+            </div>
+
+
+
+            <h1 class="sub">Additional comments</h1>
+            <input type="text" id="password" name="password" class="input" >
+        </form>
+
+    </div>
+</section>
+</body>
+</html>
+
